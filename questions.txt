@@ -1,0 +1,20 @@
+What is Sinatra? Where does it run?
+
+Sinatra is a gem that runs on ruby.  It runs locally and connects your application to a local host.
+
+What is a Gemfile? How do you use it in your Sinatra Application? Give step by step instructions.
+
+A gemfile tells your application what gems it needs to run, ie what software it needs in order to sucessfully run.  to create a Gemfile, you require the rubygems site, then the verion of ruby in the Gemfile, then the specific gems you will be using. You can also sort gems into sections like development based on which gems you will be using in your project's life (ie for development you may use one database, whereas for production you would use a different one)
+
+What is an ORM? What are the basic features of an ORM? Why is it helpful?
+
+An ORM provides a way of querying a databse and doing migrations through Ruby. It is useful because when writing an app you will want to use commands that are readible in Ruby and are understandable to sqlite.
+
+What is the public folder? What do we use it for?
+The public folder is used for images and styling.  It contains things that are accessible to the public.  One advantage is that when typing out routes, you do not need to say ./public/images, instead you can type ../images for example.
+
+What is REST? Why is it useful?
+
+REST is the database model most commonly used.  It stands for Read, Evaluate, and two other things.  It is used for how we think about databases and routes.  Databases are on this model, and you should be able to perform the basic REST methods on objects in your database.
+
+Suppose I, with my browser, send an HTTP get request to the route that will render the view of all the SpaceCats. Walk me through step by step how your application handles that request.
